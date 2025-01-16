@@ -3,4 +3,5 @@ Does it make sense to use inheritance here? Explain.
 No, it doesn't make sense to use inheritance, it does not
 follow IS-A relationship and liskov substitution principle
 because circle is not a cylinder and cylinder has extra fields
-unrelated to circle
+unrelated to circle.
+
