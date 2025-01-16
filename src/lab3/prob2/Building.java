@@ -1,4 +1,5 @@
 package lab3.prob2;
+
 import java.util.ArrayList;
 
 public class Building {
@@ -6,7 +7,9 @@ public class Building {
     private double maintenanceCost;
 
     Building(double a, double b) {
-        this.maintenanceCost = b;
+        this.maintenanceCost = a;
+        Apartment apart = new Apartment(b);
+        addApartment(apart);
     }
 
     public void addApartment(Apartment apartment) {
