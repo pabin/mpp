@@ -1,24 +1,24 @@
 package lab3.prob3.prob3b;
 
 public class Cylinder {
+    private Circle circle;
     private double height;
-    private double radius;
 
     Cylinder(double h, double r) {
         this.height = h;
-        this.radius = r;
+        this.circle = new Circle(r);
     }
 
     public double computeVolume() {
-        return (Math.PI * this.radius * this.radius) / this.height;
+        return (circle.computeArea()) / this.height;
     }
 
     public double getHeight() {
         return this.height;
     }
 
-    public double getRadius() {
-        return this.radius;
+    public Circle getCircle() {
+        return this.circle;
     }
 }
 
