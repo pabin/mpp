@@ -4,7 +4,11 @@ import java.util.List;
 
 public class Admin {
     public static double computeUpdatedBalanceSum(List<Employee> list) {
-        //implement
-        return 0.0;
+        double totalSum = 0;
+
+        for (Employee e : list) {
+            totalSum += e.computeUpdatedBalanceSum();
+        }
+        return totalSum;
     }
 }
