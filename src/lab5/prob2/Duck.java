@@ -1,21 +1,28 @@
 package lab5.prob2;
 
-public class Duck implements FlyBehavior, QuackBehavior {
+//import lab5.prob2.interfaces.FlyBehavior;
+//import lab5.prob2.interfaces.QuackBehavior;
+
+import lab5.prob2.interfaces.FlyBehavior;
+import lab5.prob2.interfaces.QuackBehavior;
+
+public abstract class Duck implements FlyBehavior, QuackBehavior {
+    FlyBehavior flyBehavior;
+    QuackBehavior quackBehavior;
+
     @Override
     public void fly() {
-        System.out.println("flying");
+        flyBehavior.fly();
     }
 
     @Override
     public void quack() {
-        System.out.println("quacking");
+        quackBehavior.quack();
     }
 
     public void swim() {
-        System.out.println("swimming");
+        System.out.println("all duck can do swimming");
     }
 
-    public void display() {
-        System.out.println("displaying");
-    }
+    abstract void display();
 }
