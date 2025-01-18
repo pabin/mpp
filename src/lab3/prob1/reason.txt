@@ -1,0 +1,19 @@
+Q1.
+
+P1 is an instance of PersonWithJob and P2 is an
+instance of Person.
+
+In the first comparison P1 is being compared with P2,
+here the equals method in PersonWithJob checks if the
+object being compared is an instance of PersonWithJob
+or not.
+Since the second object is an Instance of Person but not
+an Instance of PersonWithJob so it gives false results.
+
+While in the second comparison similar to the equals
+method of PersonWithJob, equals method of Person class
+is comparing if the object being compared is an instance
+of the Person class or not. Since any object that is an
+instance of the PersonWithJob is also an instance of
+Person class as PersonWithJob is inherited from Person
+class it gives us a true result.
