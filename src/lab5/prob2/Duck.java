@@ -1,8 +1,5 @@
 package lab5.prob2;
 
-//import lab5.prob2.interfaces.FlyBehavior;
-//import lab5.prob2.interfaces.QuackBehavior;
-
 import lab5.prob2.interfaces.FlyBehavior;
 import lab5.prob2.interfaces.QuackBehavior;
 
