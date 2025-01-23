@@ -1,9 +1,9 @@
 package lab7.prob4;
 
 public class RubberDuck extends Duck {
-    public RubberDuck() {
-        flyBehavior = new CannotFly();
-        quackBehavior = new Squeak();
+    @Override
+    public void fly() {
+        System.out.println("I cannot fly");
     }
 
     @Override

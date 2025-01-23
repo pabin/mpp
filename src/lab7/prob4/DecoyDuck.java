@@ -1,9 +1,14 @@
 package lab7.prob4;
 
 public class DecoyDuck extends Duck {
-    public DecoyDuck() {
-        flyBehavior = new CannotFly();
-        quackBehavior = new MuteQuack();
+    @Override
+    public void fly() {
+        System.out.println("I cannot fly");
+    }
+
+    @Override
+    public void quack() {
+        System.out.println("Mute Quack");
     }
 
     @Override
