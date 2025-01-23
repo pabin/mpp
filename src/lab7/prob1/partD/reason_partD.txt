@@ -1,0 +1,4 @@
+some of the employees were compared but since they were already visited,
+equals method somehow returned them as not equals and whole comparison
+for remove duplicate is false, as few employees are not actually removed
+from the list.

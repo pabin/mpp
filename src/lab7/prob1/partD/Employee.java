@@ -1,5 +1,7 @@
 package lab7.prob1.partD;
 
+import java.util.Objects;
+
 public class Employee {
     private String name;
     private int salary;
@@ -45,13 +47,15 @@ public class Employee {
 
     @Override
     public int hashCode() {
-        int result = 17;
-        long longval = Double.doubleToLongBits(salary);
-        int salaryHash = (int) (longval ^ (longval >>> 32));
-        result += 31 * result + name.hashCode();
-        result += 31 * result + salaryHash;
-        result += 31 * result + (visited ? 1 : 0);
-        //result += 31 * result + (visited ? 71 : 43);
-        return result;
+//        int result = 17;
+//        long longval = Double.doubleToLongBits(salary);
+//        int salaryHash = (int) (longval ^ (longval >>> 32));
+//        result += 31 * result + name.hashCode();
+//        result += 31 * result + salaryHash;
+//        result += 31 * result + (visited ? 1 : 0);
+//        //result += 31 * result + (visited ? 71 : 43);
+//        return result;
+//
+        return Objects.hash(name, salary, visited);
     }
 }

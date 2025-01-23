@@ -1,0 +1,5 @@
+Here hashmap is being used, and inside removeDuplicates method
+containsKey is being used to compare if the key exists.
+Since, hashcode method is not being overridden to compare
+and to make sure two employees are indeed equal. This method is not even
+considering the existing employee in hasmap infact exists.

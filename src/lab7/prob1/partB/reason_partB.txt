@@ -1,0 +1,4 @@
+the equals method is not being overridden and contains method
+inside listsAreEqual method is using the object's original
+equals method to compare two employee and it is returning
+false even for the same employee.

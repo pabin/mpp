@@ -1,4 +1,4 @@
-package lab8.prob2C;
+package lab8.prob2B;
 
 import java.util.ArrayList;
 import java.util.Collections;

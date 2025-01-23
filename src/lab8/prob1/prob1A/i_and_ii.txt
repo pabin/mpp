@@ -1,0 +1,10 @@
+
+Question 1.a.i:
+parameters: None
+free variables:  s and t
+
+Question 1.a.ii:
+parameters: s and t
+free variables: ignoreCase
+
+

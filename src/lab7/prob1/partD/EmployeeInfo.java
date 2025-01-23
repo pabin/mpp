@@ -23,6 +23,7 @@ public class EmployeeInfo {
                 tracker.get(e).setVisited(true);
             }
         }
+        System.out.println("tracker: " + tracker);
         return noDupsList;
     }
 
@@ -89,6 +90,9 @@ public class EmployeeInfo {
      * elements (this is really just set equality)
      */
     public static boolean listsAreEqual(List<Employee> l1, List<Employee> l2) {
+        System.out.println("l1.size(): " + l1);
+        System.out.println("l2.size(): " + l2);
+
         if (l1.size() != l2.size()) return false;
         for (Employee e : l1) {
             if (!l2.contains(e)) return false;
