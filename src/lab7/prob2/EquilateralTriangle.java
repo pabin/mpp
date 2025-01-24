@@ -1,6 +1,6 @@
 package lab7.prob2;
 
-public class EquilateralTriangle implements Polygon, ClosedCurve {
+public class EquilateralTriangle implements Polygon {
     final private double sideA;
     final private double sideB;
     final private double sideC;

@@ -1,6 +1,6 @@
 package lab7.prob2;
 
-public final class Rectangle implements Polygon, ClosedCurve {
+public final class Rectangle implements Polygon {
     final private double width;
     final private double length;
 
