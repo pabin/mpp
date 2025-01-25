@@ -6,15 +6,26 @@ import java.util.function.BiFunction;
 
 public class Main {
     public static void main(String[] args) {
-        class MyBiFunction implements BiFunction<Double, Double, List<Double>> {
-            public List<Double> apply(Double x, Double y) {
-                List<Double> list = new ArrayList<>();
-                list.add(Math.pow(x, y));
-                list.add(x * y);
-                return list;
-            }
-        }
-        MyBiFunction f = new MyBiFunction();
-        System.out.println(f.apply(2.0, 3.0));
+//        class MyBiFunction implements BiFunction<Double, Double, List<Double>> {
+//            public List<Double> apply(Double x, Double y) {
+//                List<Double> list = new ArrayList<>();
+//                list.add(Math.pow(x, y));
+//                list.add(x * y);
+//                return list;
+//            }
+//        }
+//        MyBiFunction f = new MyBiFunction();
+//        System.out.println(f.apply(2.0, 3.0));
+
+        BiFunction<Double, Double, List<Double>> bifunc = (x, y) -> {
+            List<Double> list = new ArrayList<>();
+            list.add(Math.pow(x, y));
+            list.add(x * y);
+            return list;
+        };
+
+        System.out.println(bifunc.apply(2.0, 3.0));
+
+
     }
 }
