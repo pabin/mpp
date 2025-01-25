@@ -9,9 +9,6 @@ public class ForEachB {
         List<String> list = Arrays.asList("Hello there", "Goodbye", "Back soon",
                 "Away", "On Vacation", "Everywhere you want to be");
 
-//        list.forEach(String::toUpperCase);
-//        list.forEach(System.out::println);
-
         list.stream()
                 .map(String::toUpperCase)
                 .forEach(System.out::println);
