@@ -16,7 +16,6 @@ public class EmployeeInfo {
             public int compare(Employee e1, Employee e2) {
                 if (method == SortMethod.BYNAME) {
 //                    return e1.name.compareTo(e2.name);
-
                     if (e1.name.compareTo(e2.name) == 0) {
                         return Integer.compare(e1.salary, e2.salary);
                     } else {

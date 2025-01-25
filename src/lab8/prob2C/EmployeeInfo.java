@@ -11,11 +11,18 @@ public class EmployeeInfo {
         Collections.sort(emps, (e1, e2) ->
         {
             if (method == SortMethod.BYNAME) {
-                return e1.name.compareTo(e2.name);
+                if (e1.name.compareTo(e2.name) == 0) {
+                    return Integer.compare(e1.salary, e2.salary);
+                } else {
+                    return e1.name.compareTo(e2.name);
+                }
             } else {
-                if (e1.salary == e2.salary) return 0;
-                else if (e1.salary < e2.salary) return -1;
-                else return 1;
+                if (Integer.compare(e1.salary, e2.salary) == 0) {
+                    return e1.name.compareTo(e2.name);
+                } else {
+                    return Integer.compare(e1.salary, e2.salary);
+                }
+             
             }
         });
     }
