@@ -50,9 +50,15 @@ public class Employee {
                 add(new Employee("Rich", 88000));
             }
         };
+        System.out.println(list);
         //expected output:
         //[[Jim, 100000], [Jim, 75000], [Jim, 70000], [Joe, 59000], [Joe, 50000], [Rich, 88000], [Steve, 55000], [Tom, 80000]]
-        System.out.println(/*implement */);
+        List<Employee> result = list.stream()
+                .sorted(Comparator.comparing((Employee e) -> e.getSalary()).reversed())
+                .sorted(Comparator.comparing((Employee e) -> e.getName()))
+                .toList();
+        
+        System.out.println(result);
     }
 }
 

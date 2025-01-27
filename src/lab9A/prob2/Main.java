@@ -18,12 +18,15 @@ public class Main {
     //Uses flatMap to write to console a list of all order items
     private void showAllOrderItems() {
         System.out.println("\n==============\nAll order items:");
-        //implement
+        List<OrderItem> orderItems = orders.stream()
+                .flatMap((Order x) -> x.getOrderItems().stream())
+                .toList();
+
+        System.out.println(orderItems);
     }
 
     private void displayAllOrders() {
         System.out.println(orders);
-        ;
     }
 
     private void loadOrderData() {
