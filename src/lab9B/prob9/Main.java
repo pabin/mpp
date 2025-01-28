@@ -1,9 +1,6 @@
 package lab9B.prob9;
 
-import java.util.Random;
-import java.util.function.Supplier;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
