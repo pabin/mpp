@@ -27,9 +27,9 @@ public class Main {
         System.out.println("----");
 
 
-        List<Integer> arr = Arrays.asList(9, 0, 2, 7, 8);
+//        List<Integer> arr = Arrays.asList(9, 0, 2, 7, 8);
 
-        Stream<Integer> stream = arr.stream();
-        System.out.println(stream);
+//        Stream<Integer> stream = arr.stream();
+//        System.out.println(stream);
     }
 }
