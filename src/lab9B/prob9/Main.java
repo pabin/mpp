@@ -7,19 +7,12 @@ import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
-        printSquare(4);
+        printSquare(9);
     }
 
     public static void printSquare(int num) {
-//        Supplier<Integer> supp = (1) -> 1;
-
-        IntStream.iterate(1, n -> n < 100, n -> n * n)
-                .limit(10)
+        IntStream.iterate(1, n -> n * 2)
+                .limit(num)
                 .forEach(System.out::println);
-
-//        Stream.generate(() -> 2 * 2)
-//                .limit(5).forEach(System.out::println);
-
-
     }
 }
