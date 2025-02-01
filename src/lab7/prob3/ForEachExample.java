@@ -11,7 +11,8 @@ public class ForEachExample {
 
         //print each element of the list in upper case format
         //implement a Consumer
-        Consumer<String> toUpperCaseConsumer = s -> System.out.println(s.toUpperCase());
-        list.forEach(toUpperCaseConsumer);
+        MyConsumer<String> toUpperCaseConsumer = s -> System.out.println(s.toUpperCase());
+
+        list.forEach(x -> toUpperCaseConsumer.accept(x));
     }
 }
