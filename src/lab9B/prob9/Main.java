@@ -4,12 +4,13 @@ import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
-        printSquare(9);
+        printSquare(5);
     }
 
     public static void printSquare(int num) {
-        IntStream.iterate(1, n -> n * 2)
+        IntStream.iterate(1, n -> n + 1)
                 .limit(num)
+                .map(x -> x * x)
                 .forEach(System.out::println);
     }
 }
