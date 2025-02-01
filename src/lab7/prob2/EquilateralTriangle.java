@@ -11,12 +11,6 @@ public class EquilateralTriangle implements Polygon {
         this.sideC = side;
     }
 
-    @Override
-    public double computePerimeter() {
-        System.out.println("in triangle");
-        return sideA + sideB + sideC;
-    }
-
     public double[] getSides() {
         double[] sides = new double[]{this.sideA, this.sideB, this.sideC};
         return sides;
