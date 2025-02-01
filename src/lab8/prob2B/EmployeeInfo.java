@@ -8,8 +8,6 @@ import java.util.List;
 public class EmployeeInfo {
     static enum SortMethod {BYNAME, BYSALARY}
 
-    ;
-
     public void sort(List<Employee> emps, final SortMethod method) {
         class EmployeeComparator implements Comparator<Employee> {
             @Override
